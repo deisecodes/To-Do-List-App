@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Kitty List</title>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="main.css">
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
+    </head>
+    <body>
+    
+        <header id="header" class="pastel-bg-nav shadow-md ">
+            <div class="container mx-auto flex items-center justify-between p-4">
+                <div class="flex items-center space-x-2">
+                    <div class="cat-icon w-20 h-20">
+                        <img src="img/purple-cat-icon.png" alt="Purple Cat Icon" class="w-full h-full">
+                    </div>
+                    <h1 class="text-3xl font-semibold text-gray-700 delius-regular">Kitty List</h1><br>
+                </div>
+    
+                <div class="sidebar">
+                    <!-- Sidebar Icon -->
+                    <img src="img/menu-bar.png" alt="Sidebar Icon">
+                    <!-- Link -->
+                    <nav>
+                        <a href="#">+ Your Folders</a><br>
+                        <a href="userguide.html">+ About Kitty List</a>
+                    </nav>
+                </div>
+               
+                    <!--<button id="add-task-btn" class="bg-violet-500 text-white px-4 py-2 rounded-lg hover:bg-gradient-to-r 
+                     transition hover:text-violet-300">
+                        Your Folders
+                    </button> !-->
+                
+            </div>
+        </header>
+    
+        <main id="main" class="p-6 bg-gradient-to-r from-violet-200 via-violet-300 to-purple-200 min-h-screen">
+            <div>
+                <section id="home"><br><br>
+                    <img src="img/purple-cat-icon.png" alt="Purple Cat Icon">
+                    <h2 class="delius-regular">Let's start something new today!</h2>
+                    <div class="flex items-center justify-center flex space-x-4"><br>
+                       <input
+                         id="task-input"
+                          type="text"
+                          placeholder="add task here"
+                          class="px-3 py-1.5 text-sm border border-gray-300 rounded-lg focus:outline-none 
+                          focus:ring-2 focus:ring-violet-500">
+    
+                        <button id="add-task-btn" class="style-font bg-violet-500 text-white px-4 py-2 rounded-lg hover:bg-gradient-to-r 
+                          transition hover:text-violet-600">
+                         Add Task
+                       </button>
+    
+                    </div>
+                </section>
+            </div>
+    
+               <div id="tasks">
+                    <div class="">
+                        <ul id="task-list" class="space-y-3 md:w-1/2 mx-auto">
+        
+        
+                        </ul>
+                    </div>
+                </div>
+        </main>
+    
+        <footer>
+            
+    
+        </footer>
+       
+        
+        <script src="script.js"></script>
+    </body>
+</html>

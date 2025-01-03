@@ -1,0 +1,142 @@
+.pastel-bg-nav {
+    background-color: #E6D6F2;
+ }
+
+ .cat-icon:hover {
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+ }
+
+ button {
+    cursor: pointer;
+ }
+
+ .style-font {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    ;
+ }
+
+
+ .delius-regular {
+    font-family: "Delius", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
+
+  }
+
+  h3 {
+    font-family: "Delius", serif;
+    color: purple;
+    font-size: 25px;
+
+    }
+
+    p {
+      font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif !important;
+      color: white !important;
+    }
+
+  h1 {
+    color: rgb(210, 127, 255) !important ;
+  }
+
+  h2 {
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+
+  ol:hover {
+    color: white;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+  }
+
+ p {
+  color: slateblue;
+ }
+
+ 
+  img {
+    width: 20%;
+    height: 20%;;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    display: flex;
+    object-fit: cover;
+  }
+
+  .sidebar {
+    width: 60px; 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    transition: width 0.3s ease;
+  }
+
+  .sidebar:hover {
+    width: 200px;
+    
+  }
+
+  
+  .sidebar img {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    display: flex;
+  }
+
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    background-color: rgb(204, 130, 238);
+    font-size: 16px;
+    text-align: center;
+    opacity: 0;
+    margin-top: 10px;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  }
+
+  .sidebar:hover a {
+    opacity: 1; 
+    transform: translateY(0);
+  }
+
+ 
+  .task-item {
+    transition: all 0,3s ease-in-out;
+    margin-top: 10px;
+  }
+
+  .task-item:hover {
+  background-color: none ;
+  }
+
+  .completed {
+    text-decoration: line-through;
+    color: purple;
+  }
+
+  .dotted-border {
+    border: 2px dotted white; 
+    padding: 20px; 
+    margin: 20px; 
+    text-align: center;
+  }
+
+
+
+
+
+  @media (max-width: 640px) {
+    img {
+      width: 100px;
+      height: 100px;
+    }
+  }
