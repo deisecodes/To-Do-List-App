@@ -21,7 +21,7 @@ O *Kitty List* é um aplicativo simples, fofo e direto para gerenciar suas taref
 - **CSS3 e TailwindCSS** - Estilo visual da página.
 - **JavaScript** - Funcionalidades interativas, como o 'adicionar' e 'remover tarefas'.
 
-## Contribuindo 👩‍💻
+## Contribuir 👩‍💻
 Ficarei feliz se caso você deseja contribuir para o projeto! Tenho uma licença MIT (localizada nos arquivos acima) apenas por questões autorais, mas você pode usar, distribuir e modificar o código livremente :) 
 
 
