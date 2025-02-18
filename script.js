@@ -30,12 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     taskList.addEventListener("change", function (event) {
       if (event.target.type === "checkbox") {
-        const taskText = event.target.nextElementSibling; // The task text element
+        const taskText = event.target.nextElementSibling;
   
         if (event.target.checked) {
-          taskText.classList.add("line-through", "text-gray-500"); // Mark as completed
+          taskText.classList.add("line-through", "text-gray-500"); 
         } else {
-          taskText.classList.remove("line-through", "text-gray-500"); // Remove checked styles
+          taskText.classList.remove("line-through", "text-gray-500"); 
         }
       }
     });
