@@ -30,12 +30,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
     taskList.addEventListener("change", function (event) {
       if (event.target.type === "checkbox") {
-        const taskText = event.target.nextElementSibling;
+        const taskText = event.target.nextElementSibling; // The task text element
   
         if (event.target.checked) {
-          taskText.classList.add("line-through", "text-gray-500"); 
+          taskText.classList.add("line-through", "text-gray-500"); // Mark as completed
         } else {
-          taskText.classList.remove("line-through", "text-gray-500"); 
+          taskText.classList.remove("line-through", "text-gray-500"); // Remove checked styles
         }
       }
     });
@@ -57,6 +57,7 @@ document.addEventListener('DOMContentLoaded', () => {
     savedTasks.forEach(task => addTask(task.text, task.completed, task.tag, task.tagColor));
   }
 
+  // Salva a lista de tarefas no Local Storage
   function saveTasks() {
     const tasks = [];
     document.querySelectorAll(".task-item").forEach(taskItem => {
