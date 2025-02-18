@@ -25,8 +25,9 @@ O *Kitty List* é um aplicativo simples, fofo e direto para gerenciar suas taref
 Ficarei feliz se caso você deseja contribuir para o projeto! Tenho uma licença MIT (localizada nos arquivos acima) apenas por questões autorais, mas você pode usar, distribuir e modificar o código livremente :) 
 
 
-
 ✨✨.
+
+@deisecodes
 
 
 
