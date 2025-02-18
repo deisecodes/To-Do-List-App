@@ -1,15 +1,15 @@
-# To-Do-List-App
-// a simple and clean cat-themed to do list app to help you in your daily tasks! //
+# Kitty List 🐱
 
-🌱 features:
+## Sobre
+O *Kitty List* é um aplicativo simples, fofo e direto para gerenciar suas tarefas diárias. Ele permite que você adicione, visualize e remova tarefas facilmente. Com uma interface limpa e funcional, este app é ideal para quem deseja um jeito rápido de organizar suas atividades sem complicação.
 
-✨Tailwind CSS for better responsivity
-✨semantic HTML, CSS, and Javascript
-✨simple to do list with violet pastel colors
-✨cat themed design
-✨a user guide page dedicated to showcase upcoming features 
+## Funcionalidades Atuais
+- **Adicionar Tarefas**: Você pode adicionar novas tarefas à lista.
+- **Visualizar Tarefas**: Todas as tarefas adicionadas são exibidas em uma lista organizada.
+- **Remover Tarefas**: Você pode remover tarefas que já foram concluídas ou que não são mais necessárias.
 
-📌this website is currently live here:
+## Como Usar
+1. O site está pronto para uso neste link: 
+  📌 https://deisecodes.github.io/To-Do-List-App/
 
-https://deisecodes.github.io/To-Do-List-App/
 
