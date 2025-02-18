@@ -1,49 +1,71 @@
 document.addEventListener('DOMContentLoaded', () => {
-    // Select the button, input, and task list
     const addTaskBtn = document.getElementById('add-task-btn');
     const taskInput = document.getElementById('task-input');
     const taskList = document.getElementById('task-list');
 
 
     addTaskBtn.addEventListener('click', () => {
-      // Get the task text from the input field
       const taskText = taskInput.value.trim();
 
-      // Check if the input is empty
       if (taskText === '') {
         alert('Please enter a task!');
         return;
       }
 
-      // Create a new task item
       const newTask = document.createElement('li');
       newTask.className = 'task-item bg-violet-100 text-violet-700 px-4 py-2 rounded flex justify-between items-center';
 
-      // Add task content
       newTask.innerHTML = `
         <div class="flex items-center space-x-2">
           <input type="checkbox" class="checkbox">
           <span>${taskText}</span>
         </div>
-        <button class="text-red-500 hover:underline" onclick="this.parentElement.remove()">Remove Task </button>
+        <button class="text-red-500 hover:underline" onclick="this.parentElement.remove()">Remove Task</button>
       `;
 
-      // Append the new task to the task list
       taskList.appendChild(newTask);
 
-      // Clear the input field
       taskInput.value = '';
     });
 
-    // Event listener for marking tasks as completed
-    taskList.addEventListener('change', (event) => {
-      if (event.target.classList.contains('checkbox')) {
-        const taskText = event.target.nextElementSibling;
+    taskList.addEventListener("change", function (event) {
+      if (event.target.type === "checkbox") {
+        const taskText = event.target.nextElementSibling; // The task text element
+  
         if (event.target.checked) {
-          taskText.classList.add('completed');
+          taskText.classList.add("line-through", "text-gray-500"); // Mark as completed
         } else {
-          return
+          taskText.classList.remove("line-through", "text-gray-500"); // Remove checked styles
         }
       }
     });
   });
+  
+
+  const toggleButtons = document.querySelectorAll('.toggle-button');
+  const toggleContents = document.querySelectorAll('.toggle-content');
+
+  toggleButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      toggleContents[index].classList.toggle('open');
+
+    });
+  });
+
+  function loadTasks() {
+    const savedTasks = JSON.parse(localStorage.getItem("tasks")) || [];
+    savedTasks.forEach(task => addTask(task.text, task.completed, task.tag, task.tagColor));
+  }
+
+  function saveTasks() {
+    const tasks = [];
+    document.querySelectorAll(".task-item").forEach(taskItem => {
+      tasks.push({
+        text: taskItem.querySelector(".task-text").textContent,
+        completed: taskItem.querySelector("input[type='checkbox']").checked,
+        tag: taskItem.querySelector(".tag-display").textContent,
+        tagColor: taskItem.querySelector(".tag-display").classList[3] || ""
+      });
+    });
+    localStorage.setItem("tasks", JSON.stringify(tasks));
+  }
