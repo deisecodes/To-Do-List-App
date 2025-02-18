@@ -55,6 +55,7 @@
 
  p {
   color: slateblue;
+  text-align: center;
  }
 
  
@@ -82,7 +83,6 @@
     width: 200px;
     
   }
-
   
   .sidebar img {
     width: 40px;
@@ -130,6 +130,37 @@
     text-align: center;
   }
 
+  footer {
+    text-align: center;
+  }
+
+  .toggle-content {
+    display: none;
+    
+  }
+
+  .toggle-content.open {
+    display: block;
+  }
+
+  .toggle-button {
+    cursor: pointer;
+    transition: transform 0.3 ease;
+  }
+
+  .hidden-title {
+    visibility: hidden;
+  }
+
+  .small-img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    display: flex;
+    object-fit: cover;
+    width: 20px ;
+    height: 20px ;
+  }
 
 
 
