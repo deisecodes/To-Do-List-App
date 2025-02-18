@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,7 +12,8 @@
         <link href="https://fonts.googleapis.com/css2?family=Delius&display=swap" rel="stylesheet">
     </head>
     <body>
-    
+
+        <!--header section -->
         <header id="header" class="pastel-bg-nav shadow-md ">
             <div class="container mx-auto flex items-center justify-between p-4">
                 <div class="flex items-center space-x-2">
@@ -23,23 +24,18 @@
                 </div>
     
                 <div class="sidebar">
-                
+                    <!-- Sidebar Icon -->
                     <img src="img/menu-bar.png" alt="Sidebar Icon">
-            
+                    <!-- Link -->
                     <nav>
-                        <a href="#">+ Your Folders</a><br>
-                        <a href="userguide.html">+ About Kitty List</a>
+                        <a href="about.html">+ About Kitty List</a><br>
+                        <a href="features.html">+ Upcoming Features</a>
                     </nav>
                 </div>
-               
-                    <!--<button id="add-task-btn" class="bg-violet-500 text-white px-4 py-2 rounded-lg hover:bg-gradient-to-r 
-                     transition hover:text-violet-300">
-                        Your Folders
-                    </button> !-->
-                
             </div>
         </header>
-    
+
+        <!--main content / section -->
         <main id="main" class="p-6 bg-gradient-to-r from-violet-200 via-violet-300 to-purple-200 min-h-screen">
             <div>
                 <section id="home"><br><br>
@@ -52,29 +48,27 @@
                           placeholder="add task here"
                           class="px-3 py-1.5 text-sm border border-gray-300 rounded-lg focus:outline-none 
                           focus:ring-2 focus:ring-violet-500">
-    
+                        
+                        <!--'add task' button -->
                         <button id="add-task-btn" class="style-font bg-violet-500 text-white px-4 py-2 rounded-lg hover:bg-gradient-to-r 
                           transition hover:text-violet-600">
                          Add Task
                        </button>
-    
                     </div>
                 </section>
             </div>
     
                <div id="tasks">
-                    <div class="">
+                    <div>
                         <ul id="task-list" class="space-y-3 md:w-1/2 mx-auto">
-        
-        
                         </ul>
                     </div>
                 </div>
         </main>
-    
-        <footer>
-            
-    
+
+        <!--footer -->
+        <footer class="pastel-bg-nav shadow-md">
+            <p>@deisecodes</p>
         </footer>
        
         
